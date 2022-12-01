@@ -205,6 +205,3 @@ And there you have it: we've installed and used a npm package. The first of many
 
 If it is not entirely clear why we occupy us with all this stuff, see the next chapter where we take a look at some advantages.
 
----
-
-[Next: Advantages of npm](packages-04-advantages)

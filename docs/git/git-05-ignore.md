@@ -113,7 +113,3 @@ git commit -m "added .gitignore"
 
 In practice, you will create such a `.gitignore` file as one of your first files. This way you avoid "contaminating" your repository with unnecessary files, and you avoid drastic actions such as deleting folders & files from the history.
 A list of useful .gitignore files can be found here: <https://github.com/github/gitignore>
-
----
-
-[Next: Branches](git-06-branches)

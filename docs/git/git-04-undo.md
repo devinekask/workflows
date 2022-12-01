@@ -156,7 +156,3 @@ You will only use such a `git reset` command to undo local commits. Once you're 
 ## Resources
 
 <https://ohshitgit.com/>
-
----
-
-[Next: Ignoring files](git-05-ignore)

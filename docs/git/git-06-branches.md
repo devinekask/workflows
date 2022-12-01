@@ -67,7 +67,3 @@ git branch -m OLD-BRANCH-NAME NEW-BRANCH-NAME
 ```
 
 If you like to gain some more background information on this, you can [read this article](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main)
-
----
-
-[Next: Collaboration](collab-01-github-push)

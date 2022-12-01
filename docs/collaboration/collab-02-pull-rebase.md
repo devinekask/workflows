@@ -199,7 +199,3 @@ nothing to commit (working directory clean)
 ```
 
 Push to the remote repository. Also pull in the projects folder so that both repositories are up-to-date.
-
----
-
-[Next: Merging and resolving conflicts](collab-03-merge-conflicts)

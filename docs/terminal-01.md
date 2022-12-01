@@ -158,7 +158,3 @@ Do not just copy-paste terminal statements without understanding what they do. I
 ## Resources
 
 - [Linux command line for you and me!](https://lym.readthedocs.io/en/latest/)
-
----
-
-[Next: Git intro](git-01-intro)

@@ -144,7 +144,3 @@ Execute `git pull` in the other folder so that both are synced again.
 ## Visually resolve conflicts
 
 If you like a more visual way, you can [resolve merge conflicts in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol#_merge-conflicts)
-
----
-
-[Next Modules and Packages](packages-01-modules)

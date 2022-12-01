@@ -45,7 +45,3 @@ Git is installed when you install the xcode command line tools. (or run `xcode-s
 ## Resources
 
 <https://gitexplorer.com/>
-
----
-
-[Next: Create a repository](git-02-create-repo)

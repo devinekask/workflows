@@ -11,10 +11,10 @@ toc_max_heading_level: 5
 As developers, we need a lot of tools in our workflow, let us get to know them:
 
 - [Terminal](terminal-01)
-- [Git](git-01-intro)
-- [Collaboration](collab-01-github-push)
+- [Git basics](category/git---basics)
+- [Git collaboration](category/git---collaboration)
   - TODO git pull origin master --allow-unrelated-histories
-- [Packages/npm](packages-01-modules)
+- [Modules/npm](category/modules)
 - [Vite](vite-01-intro)
 - [Homebrew](homebrew-01-intro)
 - TODO Linting

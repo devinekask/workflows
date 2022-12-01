@@ -26,7 +26,3 @@ $ git status
 ## Heads up
 
 Be aware where exactly you initialize the new repository. You wouldn't be the first to accidentally put its whole documents directory under source control. If you are not entirely sure where you are, run the command `pwd` to **p**rint the current **w**orking **d**irectory.
-
----
-
-[Next: Make a commit](git-03-commit)

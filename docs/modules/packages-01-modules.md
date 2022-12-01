@@ -12,7 +12,3 @@ Originally, JavaScript didn't have any mechanism to split and combine pieces of 
 It was waiting until ES6 for a native module syntax in the browser. Luckily for us, the same syntax is available now in Nodejs.
 
 For the rest of this chapter, we refer to [this article on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) Be sure to pay close attention to the examples provided.
-
----
-
-[Next: npm](packages-02-npm)

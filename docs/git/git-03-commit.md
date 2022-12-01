@@ -133,7 +133,3 @@ We've seen before that with `git add .` you can stage all changes before commit.
 It is important to know how to work with git via the command line. Without understanding the basic commands, it is impossible to understand more complex commands that you will need sooner or later.
 
 That said, for some very common commands, it can become cumbersome to execute them all the time. Luckily for us, some GIT functionality is baked in VS Code already. See [this paragraph about commits](https://code.visualstudio.com/docs/editor/versioncontrol#_commit) for more information.
-
----
-
-[Next: Undo changes](git-04-undo)

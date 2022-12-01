@@ -150,7 +150,3 @@ Just to make things clear:
 - package-lock.json: _do_ include in version control
 
 The package-lock.json file is auto generated en keeps track of all the packages installed in your project. For instance: it is perfectly possible that two separate packages both need the same dependency. Npm then decides which version to install en keeps track of this in the lock file. So this can speed tings up in successive installations.
-
----
-
-[Next: npx](packages-05-npx)

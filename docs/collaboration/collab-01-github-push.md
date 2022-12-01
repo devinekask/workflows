@@ -32,7 +32,7 @@ ssh-keygen -t ed25519 -C "your_email@student.howest.be"
 When asked for the location of the key, you can give the key a more describing name:
 
 ```bash
-> Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM): 
+> Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM):
 $ /Users/YOUR NAME/.ssh/github
 ```
 
@@ -171,7 +171,3 @@ To git@github.com:demouser/hellogit.git
 ```
 
 When you view the repository through your browser, you will see that the contents of the `README.md` file are shown below the list of files. This is a file in the Markdown format. (the same for the file you are reading now...) Markdown is a simple markup language for formatting documents. More information about this can be found on [Wikipedia](http://en.wikipedia.org/wiki/Markdown) or this [GitHub specific flavor](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-
----
-
-[Next: Pull](collab-02-pull-rebase)
