@@ -204,4 +204,3 @@ Hello Node.js The id is: 7paYoH6CZva14wUhX9mgf
 And there you have it: we've installed and used a npm package. The first of many to come :-)
 
 If it is not entirely clear why we occupy us with all this stuff, see the next chapter where we take a look at some advantages.
-

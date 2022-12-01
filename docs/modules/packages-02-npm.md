@@ -59,4 +59,3 @@ Have a look at [the documentation](https://github.com/nvm-sh/nvm#usage) to see w
 ### npm
 
 There is no need to install npm on its own, it comes with the installation of Node.js. Try it, just run `npm` on the command line.
-

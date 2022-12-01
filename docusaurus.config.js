@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
 	title: 'Tooling',
 	tagline: 'Tools for Devine developers',
-	url: 'https://your-docusaurus-test-site.com',
-	baseUrl: '/',
+	url: 'https://devinekask.github.io/',
+	baseUrl: '/web3-tooling/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
@@ -40,7 +40,7 @@ const config = {
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					editUrl:
-						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+						'https://github.com/devinekask/web3-tooling/',
 				},
 				blog: false,
 				theme: {
@@ -67,7 +67,7 @@ const config = {
 						label: 'Tooling',
 					},
 					{
-						href: 'https://github.com/facebook/docusaurus',
+						href: 'https://github.com/devinekask/web3-tooling/',
 						label: 'GitHub',
 						position: 'right',
 					},
