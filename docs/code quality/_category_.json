@@ -1,0 +1,8 @@
+{
+	"label": "Code quality",
+	"position": 8,
+	"link": {
+		"type": "generated-index",
+		"description": "A look on how code is written"
+	}
+}
