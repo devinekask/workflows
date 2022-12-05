@@ -6,7 +6,7 @@ toc_min_heading_level: 2
 toc_max_heading_level: 5
 ---
 
-## Devine Development tooling
+## Devine Development workflows
 
 As developers, we need a lot of tools in our workflow, let us get to know them:
 

@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'Tooling',
-	tagline: 'Tools for Devine developers',
+	title: 'Workflow',
+	tagline: 'Workflows and tools for Devine developers',
 	url: 'https://devinekask.github.io/',
 	baseUrl: '/web3-tooling/',
 	onBrokenLinks: 'throw',
@@ -54,17 +54,17 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: 'Tooling',
+				title: 'Devine',
 				logo: {
-					alt: 'My Site Logo',
-					src: 'img/logo.svg',
+					alt: 'Devine Logo',
+					src: 'img/devinelogo.svg',
 				},
 				items: [
 					{
 						type: 'doc',
 						docId: 'intro',
 						position: 'left',
-						label: 'Tooling',
+						label: 'Workflows',
 					},
 					{
 						href: 'https://github.com/devinekask/web3-tooling/',
