@@ -1,6 +1,6 @@
 {
-	"label": "Git - collaboration",
-	"position": 4,
+	"label": "Collaboration",
+	"position": 2,
 	"link": {
 		"type": "generated-index",
 		"description": "Working together on a project"
