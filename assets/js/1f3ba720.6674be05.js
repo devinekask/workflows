@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktooling=self.webpackChunktooling||[]).push([[847],{9522:e=>{e.exports=JSON.parse('{"title":"Git","slug":"/category/git","permalink":"/workflows/category/git","navigation":{"previous":{"title":"Terminal","permalink":"/workflows/terminal-01"},"next":{"title":"Basics","permalink":"/workflows/category/basics"}}}')}}]);
