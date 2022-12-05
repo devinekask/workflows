@@ -2,7 +2,6 @@
 	"label": "Modules",
 	"position": 5,
 	"link": {
-		"type": "generated-index",
-		"description": "Creating and handling modules in JavaScript"
+		"type": "generated-index"
 	}
 }
