@@ -6,10 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'Workflow',
+	title: 'Workflows',
 	tagline: 'Workflows and tools for Devine developers',
 	url: 'https://devinekask.github.io/',
-	baseUrl: '/web3-tooling/',
+	baseUrl: '/workflows/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
@@ -17,7 +17,7 @@ const config = {
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: 'devinekask', // Usually your GitHub org/user name.
-	projectName: 'web3-tooling', // Usually your repo name.
+	projectName: 'workflows', // Usually your repo name.
 
 	trailingSlash: false,
 
@@ -40,7 +40,7 @@ const config = {
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					editUrl:
-						'https://github.com/devinekask/web3-tooling/',
+						'https://github.com/devinekask/workflows/',
 				},
 				blog: false,
 				theme: {
@@ -67,7 +67,7 @@ const config = {
 						label: 'Workflows',
 					},
 					{
-						href: 'https://github.com/devinekask/web3-tooling/',
+						href: 'https://github.com/devinekask/workflows/',
 						label: 'GitHub',
 						position: 'right',
 					},
