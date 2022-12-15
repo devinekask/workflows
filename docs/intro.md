@@ -1,5 +1,4 @@
 ---
-
 sidebar_position: 1
 title: Home
 slug: /
@@ -14,8 +13,6 @@ As developers, we need a lot of tools in our workflow, let us get to know them:
 - [Terminal](terminal-01)
 - [Git basics](category/basics)
 - [Git collaboration](category/collaboration)
-  - TODO git pull origin master --allow-unrelated-histories
 - [Modules/npm](category/modules)
 - [Vite](vite-01-intro)
 - [Homebrew](homebrew-01-intro)
-- TODO Linting
