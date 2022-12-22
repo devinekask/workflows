@@ -8,13 +8,13 @@ Think about the name of your domain because you will use it during your studies 
 
 You can request a license through the academic software website so that you can register your domain for free with Combell.
 
-Navigate to [Academic Software](https://auth.academicsoftware.be/), enter your Howest e-mail address and click Login
+Navigate to [Academic Software](https://auth.academicsoftware.be/), enter your Howest e-mail address and click `Login`
 
 Search for the **Combell Webhosting (Linux)**. Check, double check and triple check if you have picked the Linux version!
 
 ![Combell](/img/combell/linux.png)
 
-Click the Request button to get a license. Write down or store the code that appears on the screen, you will need it in the next step. 
+Click on `Request`  to get a license. Write down or store the code that appears on the screen, you will need it in the next step. 
 
 WARNING: YOU CAN ONLY REQUEST THE CODE ONCE!
 
@@ -31,7 +31,7 @@ Add the domain if it's still available. Otherwise you need to try a different na
 
 ![Combell Domain OK](/img/combell/domainok.png)
 
-Go to cart & complete your order You see an overview of your order. Just click the Complete your order button.
+Go to cart & complete your order You see an overview of your order. Just click the `Complete your order` button.
 
 ![Combell Cart](/img/combell/cart.png)
 
@@ -39,7 +39,7 @@ Enter your contact information. Make sure your e-mail address is your howest e-m
 
 ![Combell Information](/img/combell/information.png)
 
-Click **redeem a promotional code**. Enter the code you obtained in the first step. The cost will magically reset to 0. Finally check the mark for accepting the general conditions. Place order.
+Click `redeem a promotional code`. Enter the code you obtained in the first step. The cost will magically reset to 0. Finally check the mark for accepting the general conditions. Place order.
 
 ![Combell Redeem](/img/combell/redeem.png)
 
