@@ -1,6 +1,6 @@
 # Register your domain
 
-Let's demonstrate how you can register your own domain. 
+Let's demonstrate how you can register your own domain.
 
 Think about the name of your domain because you will use it during your studies to build a portfolio. An url like [http://party-animal-4-life.be](http://party-animal-4-life.be) does not look very professional in a job interview.
 
@@ -14,13 +14,14 @@ Search for the **Combell Webhosting (Linux)**. Check, double check and triple ch
 
 ![Combell](/img/combell/linux.png)
 
-Click on `Request`  to get a license. Write down or store the code that appears on the screen, you will need it in the next step. 
+Click on `Request`  to get a license. Write down or store the code that appears on the screen, you will need it in the next step.
 
 WARNING: YOU CAN ONLY REQUEST THE CODE ONCE!
 
 ![Combell](/img/combell/request.png)
 
 ## Register the domain
+
 Navigate to [Combell Business](https://www.combell.com/en/hosting/connect/business).
 
 Choose an url followed by .be - the licence is only valid for .be domains.  The name is without spaces and all characters are in lowercase. **You cannot change this name, so think about the url you pick for yourself.**
@@ -49,7 +50,7 @@ Click `redeem a promotional code`. Enter the code you obtained in the first step
 
 You normally receive 3 mails from Combell. The most important one is the mail that asks you to set a password for your combell account.
 
-If you didn't recieve these mails after a while, 
+If you didn't recieve these mails after a while,
 you have the call [Combell's support center](https://www.combell.com/en/support).
 
 **1. Combell Sales → Thank you for your order - …**
@@ -63,4 +64,3 @@ Click on the link in the mail and set a password for your Combell account.
 **3. Combell Support → You Combell hosting is ready to use**
 
 This contains a link to your hosting dashboard.
-
