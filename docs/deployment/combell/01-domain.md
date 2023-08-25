@@ -53,14 +53,11 @@ You normally receive 3 mails from Combell. The most important one is the mail th
 If you didn't recieve these mails after a while,
 you have the call [Combell's support center](https://www.combell.com/en/support).
 
-**1. Combell Sales → Thank you for your order - …**
+1. **Combell Sales → Thank you for your order - …**
+    - This is just a confirmation of your order. You do not need any further information from that mail.
 
-This is just a confirmation of your order. You do not need any further information from that mail.
+2. **Combell Support → Set a password for your Combell account**
+    - Click on the link in the mail and set a password for your Combell account.
 
-**2. Combell Support → Set a password for your Combell account**
-
-Click on the link in the mail and set a password for your Combell account.
-
-**3. Combell Support → You Combell hosting is ready to use**
-
-This contains a link to your hosting dashboard.
+3. **Combell Support → You Combell hosting is ready to use**
+    - This contains a link to your hosting dashboard.
