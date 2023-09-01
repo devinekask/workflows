@@ -100,7 +100,7 @@ Remember to choose the SSH option (instead of the HTTPS option) when cloning a r
 
 Login to your GitHub account, and click the "New repository" button. Choose a name for your repository and click the "Create Repository" button.
 
-Don't add a `readm.md` or a `.gitignore` file yet. Since we will sync this repo with an existing one (the one we created in a previous chapter) things will get complicated if there are files on both ends. (It is definitely possible to fix this, but we won't go in to that now) If you would start completely from scratch, this wouldn't be an issue.
+Don't add a `readme.md` or a `.gitignore` file yet. Since we will sync this repo with an existing one (the one we created in a previous chapter) things will get complicated if there are files on both ends. (It is definitely possible to fix this, but we won't go in to that now) If you would start completely from scratch, this wouldn't be an issue.
 
 Open a terminal window and navigate via `cd` commands to the directory of the git repository containing the "hello world" files. We will make sure that we can synchronize our local repository via GitHub, by adding a "remote". A remote is a location where you can synchronize a git repository:
 
