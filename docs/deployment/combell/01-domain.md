@@ -28,7 +28,7 @@ Choose an url followed by .be - the licence is only valid for .be domains.  The 
 
 ![Combell Domain](/img/combell/domain.png)
 
-Add the domain if it's still available. Otherwise you need to try a different name. You do not need to add other extensions such as .com, .app,... because you will be charged for most of them.
+Add the domain if it's still available. Otherwise, you need to try a different name. You do not need to add other extensions such as .com, .app, ... because you will be charged for most of them.
 
 ![Combell Domain OK](/img/combell/domainok.png)
 
@@ -40,7 +40,7 @@ Enter your contact information. Make sure your e-mail address is your howest e-m
 
 ![Combell Information](/img/combell/information.png)
 
-Click `redeem a promotional code`. Enter the code you obtained in the first step. The cost will magically reset to 0. Finally check the mark for accepting the general conditions. Place order.
+Click `redeem a promotional code`. Enter the code you obtained in the first step. The cost will magically reset to 0. Finally, check the mark for accepting the general conditions. Place order.
 
 ![Combell Redeem](/img/combell/redeem.png)
 

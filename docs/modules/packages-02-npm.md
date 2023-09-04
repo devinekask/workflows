@@ -26,7 +26,7 @@ Let's say we need a short, random string to create the url for a new chatroom. D
 
 Take a look at [nanoid](https://www.npmjs.com/package/nanoid) You get some kind of overview, often you will find a readme here with instructions how to install and use the package.
 
-Notice the Repository link in the right column. Often the repositories of these packages are open source (but they don't have to be) This comes in handy when you stumble upon an issue and you need some help. In this case, the full readme is on the [Github repository](https://github.com/ai/nanoid)
+Notice the Repository link in the right column. Often the repositories of these packages are open source (but they don't have to be) This comes in handy when you stumble upon an issue, and you need some help. In this case, the full readme is on the [GitHub repository](https://github.com/ai/nanoid)
 
 ## CLI
 

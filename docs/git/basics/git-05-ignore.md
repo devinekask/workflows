@@ -90,7 +90,6 @@ Ref 'refs/heads/main' was rewritten
 ```
 
 The folder will be deleted on your file system and in the history. But this workflow isn't ideal. We could easely add that directory again. It's impossible to keep track of all the files you want or don't want to track yourself. We will fix this by using a `.gitignore` file.
-
 ## .gitignore
 
 We will now specify which files we don't want to track in the future. This can be done with a `.gitignore` file. This is a text file in your repository that specifies which files and directories are allowed to be ignored by git.

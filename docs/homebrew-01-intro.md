@@ -4,9 +4,9 @@ sidebar_position: 7
 
 # Homebrew
 
-Our personal computer is full of applications and terminal commands (`ls`, `git`, `nvm`, etc.) that we use every day. For Apps we use the App store or we install then via a download. Terminal commands can be tricky, sometimes they need a specific build step customized to your machine. Homebrew makes this process a breeze. Compare it like `npm` for your terminal commands.
+Our personal computer is full of applications and terminal commands (`ls`, `git`, `nvm`, etc.) that we use every day. For Apps, we use the App store, or we install then via a download. Terminal commands can be tricky, sometimes they need a specific build step customized to your machine. Homebrew makes this process a breeze. Compare it like `npm` for your terminal commands.
 
-Packages are made available through so called 'taps'. A tap is a repository that contains a list of packages. Homebrew has a default tap called `homebrew/core` that contains a lot of packages. But there are also other taps that contain packages. For example the `homebrew/cask` tap contains a lot of applications. (yep, you can use homebrew to install -and manage- applications)
+Packages are made available through so called 'taps'. A tap is a repository that contains a list of packages. Homebrew has a default tap called `homebrew/core` that contains a lot of packages. But there are other taps that contain packages. For example the `homebrew/cask` tap contains a lot of applications. (yep, you can use homebrew to install -and manage- applications)
 
 ## Installation
 
@@ -22,7 +22,7 @@ Let us install a package called 'tree' that displays the content of a directory 
 brew install tree
 ```
 
-You get some logs in your terminal that shows you the progress of the installation. Once it is done, you can use the `tree` command in your terminal. Depending where you are located in the file system, it will display the content of the current directory.
+You get some logs in your terminal that shows you the progress of the installation. Once it is done, you can use the `tree` command in your terminal. Depending on where you are located in the file system, it will display the content of the current directory.
 
 ```bash
 $ tree
@@ -47,7 +47,7 @@ It seems like a package `woff2` is available. When you install it, you will have
 
 ### Update packages
 
-You can run `brew update` to update the **registry** of packages. This will not update the packages themselves. Therefore you have to run `brew upgrade`.
+You can run `brew update` to update the **registry** of packages. This will not update the packages themselves. Therefore, you have to run `brew upgrade`.
 
 ### Uninstall a package
 

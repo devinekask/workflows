@@ -31,9 +31,9 @@ When a fragment only contains commands, no dollar signs are used.
 
 ### Terminal app
 
-You can find your terminal in your Applications -> Utilities folder. It might come in handy to put this in your dock.
+You can find your terminal in your Applications → Utilities folder. It might come in handy to put this in your dock.
 
-VS code has a terminal build in. (View -> terminal) This is convenient when you have to interact with your project.
+VS Code has a terminal build in. (View → terminal) This is convenient when you have to interact with your project.
 
 You can open VS Code from another therminal instance with the 'code' command. (if you [set it up correctly](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line))
 
@@ -131,7 +131,7 @@ defaults write com.apple.Finder AppleShowAllFiles true
 killall Finder
 ```
 
-If you want to hide them, you can can set the `AppleShowAllFiles` to `false` and run the command again.
+If you want to hide them, you can set the `AppleShowAllFiles` to `false` and run the command again.
 
 ### Profile file
 

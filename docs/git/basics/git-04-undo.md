@@ -37,7 +37,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-You can now definitively undo this, by using -just like in the previous topic- git restore:
+You can now definitively undo this, by using --just like in the previous topic-- git restore:
 
 ```bash
 git restore hello.txt

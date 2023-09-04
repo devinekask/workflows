@@ -81,7 +81,7 @@ $ node index.js
 Hello Node.js
 ```
 
-Nothing special here, we can run pyhton and php similarly. We just say something like "Hey Node.js, execute the content of the file index.js"
+Nothing special here, we can run pyhton and PHP similarly. We just say something like "Hey Node.js, execute the content of the file index.js"
 
 Since the index.js file is referenced as our "main" script in the package.json, we can run the following:
 
@@ -103,7 +103,7 @@ $ npm run test
 Error: no test specified
 ```
 
-Back to our index.js file. Add a script named "start" with the value of "node index.js" (or: "node .") to the list of scripts. Don't forget the trailing comma at the end of the test script line. This file is a JSON file after all.
+back to our index.js file. Add a script named "start" with the value of `node index.js` (or: `node .`) to the list of scripts. Don't forget the trailing comma at the end of the test script line. This file is a JSON file after all.
 
 ```diff
   "scripts": {
@@ -151,7 +151,7 @@ found 0 vulnerabilities
 
 A couple of things happened:
 
-- nanoid is added as a dependency in the `package.json`, notice the version number
+- `nanoid` is added as a dependency in the `package.json`, notice the version number
 - a `package-lock.json` file is generated
 - a node_modules directory is generated, containing the nanoid code.
 
@@ -190,7 +190,7 @@ SyntaxError: Cannot use import statement outside a module
 Node.js v18.8.0
 ```
 
-Yeah, we forgot about that one. We have to make clear that we would like to make use of this type of modules. Like they say in the Warning, add a `"type": "module",` to the package.json and try again.
+Yeah, we forgot about that one. We have to make clear that we would like to make use of this type of modules. Like they say in the warning, add a `"type": "module",` to the package.json and try again.
 
 ```bash
 npm start
