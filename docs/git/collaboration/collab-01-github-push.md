@@ -70,7 +70,7 @@ Host *
   IdentityFile ~/.ssh/github
 ```
 
-(note that we did't added the UseKeychain option -as mentioned in the guide- since we are not using a passphrase)
+(note that we didn't add the UseKeychain option --as mentioned in the guide-- since we are not using a passphrase)
 
 Now we can add the key to the ssh-agent:
 
@@ -86,7 +86,7 @@ Copy the contents of the public key (make sure you are in the .ssh directory)
 pbcopy < github.pub
 ```
 
-On Github, go to Settings -> SSH and GPG keys -> New/add SSH key -> Give it a descriptive name (e.g. "Macbook") -> Paste the key -> Add SSH key
+On GitHub, go to Settings → SSH and GPG keys → New/add SSH key → Give it a descriptive name (e.g. "Macbook") → Paste the key → Add SSH key
 
 You can test if everything is working by running the following command:
 

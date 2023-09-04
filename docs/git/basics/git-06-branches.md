@@ -46,7 +46,7 @@ The merge of `develop` in `main` is done by the `git merge` command:
 git merge develop main
 ```
 
-Switch back to `develop` immediately so you don't accidentally develop in the `main` branch (we want our `develop` branch to always have the most recent code):
+Switch back to `develop` immediately, so you don't accidentally develop in the `main` branch (we want our `develop` branch to always have the most recent code):
 
 ```bash
 git checkout develop

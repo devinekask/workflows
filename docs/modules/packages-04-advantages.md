@@ -56,7 +56,7 @@ Notice there are "dependencies" and "devDependencies". Dependencies are needed t
 
 ## Install
 
-Wanna' do a bold move? Delete the `node_modules` directory, go do it, don't be scared.
+Ready for a bold move? Delete the `node_modules` directory, go do it, don't be scared.
 
 Well, be at least a little carefully with the `rm` (remove) command, make sure you have the command correct. The `-r` flag means "recursive" and deletes every directory and its contents of that path.
 
@@ -119,7 +119,7 @@ Maybe you have to refresh the VS Code file explorer, but you can see the node_mo
 
 ## Uninstall
 
-If you want to get rid of a package, you can remove it from the `package.json` dependencies (and run `npm install` again) or you can remove one with the `uninstall` command. Let us remove ora since we don't use it afterall.
+If you want to get rid of a package, you can remove it from the `package.json` dependencies (and run `npm install` again) or you can remove one with the `uninstall` command. Let us remove ora since we don't use it after all.
 
 ```bash
 $ npm uninstall ora
@@ -137,9 +137,9 @@ A quick sidestep about those version numbers. These are not arbitrary but follow
 - MINOR version when new functionality is added in a backwards compatible manner
 - PATCH version when there are backwards compatible bug fixes
 
-This means -at least in theory- that you can safely update minor and patch changes. When there is a major update, you should reach out to the documentation for that package to see if there is some kind of upgrade guide.
+This means --at least in theory-- that you can safely update minor and patch changes. When there is a major update, you should reach out to the documentation for that package to see if there is some kind of upgrade guide.
 
-When you look at the dependencies in the `package.json`, you can see which version is desired. Often these are proceeded by symbols like `~` or `^` These all have special meanings which you can [read about here](https://github.com/npm/node-semver#versions) in detail.
+When you look at the dependencies in the `package.json`, you can see which version is desired. Often these are preceded by symbols like `~` or `^` These all have special meanings which you can [read about here](https://github.com/npm/node-semver#versions) in detail.
 
 ## Version Control
 

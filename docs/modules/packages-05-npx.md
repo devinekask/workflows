@@ -71,7 +71,7 @@ Ok to proceed? (y)
 
 ## A more useful example
 
-Making a cow speak wont't add any additional value to your resume. A better use case for `npx` is `gitignore` which add a .gitignore file to your project, especially tailored for your type of project.
+Making a cow speak won't add any additional value to your resume. A better use case for `npx` is `gitignore` which add a .gitignore file to your project, especially tailored for your type of project.
 
 ```bash
 $ npx gitignore
