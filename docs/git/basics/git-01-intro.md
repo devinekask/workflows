@@ -40,7 +40,7 @@ If you have multiple files with the same content, the tree will reference the sa
 
 We will use git from the command line. There are some applications that allow you to execute git commands via a GUI, but if you want to perform more advanced actions you will have to go back to the command line anyway.
 
-Git is installed when you install the xcode command line tools. (or run `xcode-select –-install`) So if you have already done this (for example to make Node.js work), you can get started right away. Another option (without the command line tools) is to download and install git from [http://git-scm.com/downloads](http://git-scm.com/downloads).
+Git is installed when you install the xcode command line tools. (or run `xcode-select --install`) So if you have already done this (for example to make Node.js work), you can get started right away. Another option (without the command line tools) is to download and install git from [http://git-scm.com/downloads](http://git-scm.com/downloads).
 
 ## Resources
 
