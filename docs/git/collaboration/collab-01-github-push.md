@@ -56,7 +56,7 @@ Create a `config` file if there isn't one yet:
 touch config
 ```
 
-And open it in the editor of your choice.
+And open it in the editor of your choice. (We are using `code` here, see [Launching VS Code from the command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
 
 ```bash
 code config
@@ -80,7 +80,7 @@ ssh-add github
 
 ### Adding the key to GitHub
 
-Copy the contents of the public key (make sure you are in the .ssh directory)
+Copy the contents of the public key (make sure you are in the .ssh directory) the command `pbcopy` lets us put content in our clipboard, it is like a 'cmd-c'
 
 ```bash
 pbcopy < github.pub
