@@ -56,7 +56,7 @@ Create a `config` file if there isn't one yet:
 touch config
 ```
 
-And open it in the editor of your choice.
+And open it in the editor of your choice. (We are using `code` here, see [Launching VS Code from the command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
 
 ```bash
 code config
@@ -80,7 +80,7 @@ ssh-add github
 
 ### Adding the key to GitHub
 
-Copy the contents of the public key (make sure you are in the .ssh directory)
+Copy the contents of the public key (make sure you are in the .ssh directory) the command `pbcopy` lets us put content in our clipboard, it is like a 'cmd-c'
 
 ```bash
 pbcopy < github.pub
@@ -103,6 +103,8 @@ Login to your GitHub account, and click the "New repository" button. Choose a na
 Don't add a `readme.md` or a `.gitignore` file yet. Since we will sync this repo with an existing one (the one we created in a previous chapter) things will get complicated if there are files on both ends. (It is definitely possible to fix this, but we won't go in to that now) If you would start completely from scratch, this wouldn't be an issue.
 
 Open a terminal window and navigate via `cd` commands to the directory of the git repository containing the "hello world" files. We will make sure that we can synchronize our local repository via GitHub, by adding a "remote". A remote is a location where you can synchronize a git repository:
+
+(don't forget to change `git@github.com:demouser/hellogit.git` with your own repository url, you can find it under the green 'code' button on your GitHub repository.)
 
 ```bash
 $ git remote add origin git@github.com:demouser/hellogit.git
