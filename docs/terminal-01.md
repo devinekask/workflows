@@ -68,7 +68,7 @@ Options
 ...
 ```
 
-That's a lot of options. There is no need to read all of them in detail (this is just an example) but notice that some options like '-a' also have a full variant '--add'.
+There is no need to read all of them in detail (this is just an example) but notice that some options like '-a' also have a full variant '--add'.
 
 #### Combining
 
