@@ -104,6 +104,8 @@ Don't add a `readme.md` or a `.gitignore` file yet. Since we will sync this repo
 
 Open a terminal window and navigate via `cd` commands to the directory of the git repository containing the "hello world" files. We will make sure that we can synchronize our local repository via GitHub, by adding a "remote". A remote is a location where you can synchronize a git repository:
 
+(don't forget to change `git@github.com:demouser/hellogit.git` with your own repository url, you can find it under the green 'code' button on your GitHub repository.)
+
 ```bash
 $ git remote add origin git@github.com:demouser/hellogit.git
 $ git push -u origin main
