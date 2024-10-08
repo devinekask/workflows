@@ -9,6 +9,6 @@ If we go even further then, it becomes possible to share our code with others. A
 ## Modules
 
 Originally, JavaScript didn't have any mechanism to split and combine pieces of code. NodeJS came with support for this with require(), later, things like RequireJS, Webpack and Babel made this possible for JavaScript on the browser.
-It was waiting until ES6 for a native module syntax in the browser. Luckily for us, the same syntax is available now in Nodejs.
+It was waiting until ES6 for a native module syntax in the browser. Luckily for us, the same syntax is available now in Nodejs. Have a look at [this article](https://medium.com/@joabi/understanding-require-and-import-in-javascript-524b588c3b74) for some examples
 
-For the rest of this chapter, we refer to [this article on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) Be sure to pay close attention to the examples provided.
+[Further reference on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
