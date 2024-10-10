@@ -50,6 +50,10 @@ npm outdated
 
 Nope, all good!
 
+:::info
+If you still see that the package isn't updated to it's most recent version. It probably means that there is a new [major version](https://semver.org/). To force the installation of the most recent package you can append `@latest`, like this: `npm install ora@latest`
+:::
+
 Now let us have a look at all those extra packages, check the contents of the node_modules directory. There are a lot of packages over there. That's because 'ora' depends on a couple of packages itself. You can see this on [the npmjs page](https://www.npmjs.com/package/ora?activeTab=dependencies) or in its [package.json](https://github.com/sindresorhus/ora/blob/main/package.json)
 
 Notice there are "dependencies" and "devDependencies". Dependencies are needed to run the script itself. DevDependencies are for development purposes and not necessary in a production build. For instance, the author of this package uses [ava](https://www.npmjs.com/package/ava) to test the code of this package.
