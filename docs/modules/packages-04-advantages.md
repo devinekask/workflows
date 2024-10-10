@@ -26,7 +26,7 @@ Back to the present, curious to see the state of our packages. Run the following
 ```bash
 $ npm outdated
 Package  Current  Wanted  Latest  Location          Depended by
-ora        6.0.0   6.1.2   6.1.2  node_modules/ora  hellonpm
+ora        6.0.0   6.3.1   8.1.0  node_modules/ora  [projectname]
 ```
 
 O-ow, there is a package outdated. Don't worry, we don't have to manually edit files in the node_modules folder, we can simply update this one by running:
