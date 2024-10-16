@@ -7,3 +7,7 @@ Git's behavior regarding file and folder names is influenced by the case sensiti
 ```bash
 git mv MyFileName myfilename
 ```
+
+## Don't create repositories inside iCloud/OneDrive or other cloud-synced folders
+
+Since the .git directory contains a lot of files and folders, syncing takes forever and can cause issues. It's best to create repositories in a local folder.
