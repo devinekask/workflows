@@ -10,7 +10,7 @@ export default defineConfig({
       favicon: "/favicon.ico",
       customCss: ["./src/styles/custom.css"],
       editLink: {
-        baseUrl: "https://github.com/devinekask/workflows/",
+        baseUrl: "https://github.com/devinekask/workflows/edit/main/",
       },
       logo: {
         src: "./src/assets/img/devinelogo.svg",
