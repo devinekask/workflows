@@ -10,9 +10,9 @@ Up until now, we were doing fine with the VS Code Live Server. But since our app
 
 Vite is a development server that has some special tricks up its sleeve to start it up fast, even when a lot of libraries need to be loaded first.
 
-### HRM
+### HMR
 
-Vite has Hot Module Replacement (HRM) built in. This means that when you change a file, the browser will automatically reload the page. And again... does this fast.
+Vite has Hot Module Replacement (HMR) built in. This means that when you change a file, the browser will automatically reload the page. And again... does this fast.
 
 ### Production build
 
