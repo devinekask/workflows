@@ -26,7 +26,7 @@ Also check the username. This is normally the name of your domain without a dot 
 
 Your lecturers need to be able to access your hosting to check the date that something was last uploaded. We do this by using SSH keys.
 
-Click `Add`, to add a new SSH key. Download [devine2022.pub](https://leho-howest.instructure.com/courses/15779/files/2830313?module_item_id=583445). You can open this file with VS Code and copy/paste the content. Click `Add SSH key`, to complete.
+Click `Add`, to add a new SSH key. Download [devine2022.pub](https://leho-howest.instructure.com/courses/25040/files/4772859?module_item_id=966582). You can open this file with VS Code and copy/paste the content. Click `Add SSH key`, to complete.
 
 NOTE: we only access your hosting to check the date of the final upload. We do not upload or modify any content on your hosting. Select the `SSH` option from the menu. Activate SSH access by moving the switch. It can take a while until SSH is activated.
 
