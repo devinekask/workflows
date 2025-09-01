@@ -40,8 +40,8 @@ You might have noticed the 'Node' in Node package manager, it won't come as a su
 
 ### nvm
 
-:::caution Warning
-Be sure to have a `.zshrc` file in your home directory. If you don't have one, create it with `touch ~/.zshrc` Otherwise, the installation of nvm will fail.
+:::caution
+Be sure to have a `.zshrc` or `.zprofile` file in your home directory. If you don't have one, create it with `touch ~/.zshrc` Otherwise, the installation of nvm will fail.
 :::
 
 To handle different Node.js versions easaly, there is a tool called `nvm` (node version manager) Lets start by [installing](https://github.com/nvm-sh/nvm#installing-and-updating) this one first. [^1] See the documentation for the most recent version, the command is something like this (but change the version number): `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.XX.X/install.sh | bash`
