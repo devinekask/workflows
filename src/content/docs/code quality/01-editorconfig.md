@@ -8,7 +8,7 @@ These things can be negligible when you are working on your own, but can become 
 
 By using a specific file `.editorconfig` in the root of your project, your editor (or plugin) can automatically use the correct convention. This way, you can be sure that everyone is using the same settings.
 
-In the end, it is up to you to decide which settings you want to use. You can find a list of all possible settings [here](http://editorconfig.org/#file-format-details). The following can be a great start:
+In the end, it is up to you to decide which settings you want to use. You can find [a list of all possible settings here](http://editorconfig.org/#file-format-details). The following can be a great start:
 
 ```editorconfig
 root = true
