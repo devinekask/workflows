@@ -94,7 +94,7 @@ When you open the URL in your browser, you will see a basic demo page.
 
 If you want to stop the dev server, you can enter `Ctrl + C` in the terminal.
 
-### HMR
+### HMR in action
 
 Organize your desktop so that a browser and VS Code are side by side. Make sure that the Vite dev server is running. Now edit the style.css to give the page a red background. You will see that the background of the page turns red immediately --without doing a full page refresh.- When you open up your Developer Tools and inspect the head element, you will experience that only the style tag changes when you change the background color.
 
