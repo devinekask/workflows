@@ -51,18 +51,19 @@ If we take a look at the `code` command, you will find a lot of options:
 
 ```bash
 $ code --help
-Visual Studio Code 1.71.0
+Visual Studio Code 1.104.1
 
-Usage: code [options][paths...]
+Usage: code [options] [paths...]
 
 To read from stdin, append '-' (e.g. 'ps aux | grep code | code -')
 
 Options
   -d --diff <file> <file>                    Compare two files with each other.
-  -m --merge <path1> <path2> <base> <result> Perform a three-way merge by providing paths for two modified versions
-                                             of a file, the common origin of both modified versions and the output
-                                             file to save merge results.
+  -m --merge <path1> <path2> <base> <result> Perform a three-way merge by providing paths for two modified versions of a
+                                             file, the common origin of both modified versions and the output file to save
+                                             merge results.
   -a --add <folder>                          Add folder(s) to the last active window.
+  --remove <folder>                          Remove folder(s) from the last active window.
 ...
 ```
 
@@ -134,7 +135,7 @@ If you want to hide them, you can set the `AppleShowAllFiles` to `false` and run
 ### Profile file
 
 A profile-file gets read when you start a new terminal session. In there, some commands can be executed to set environment variable, aliasses etc.
-Depending on the shell you are using, this file might be called something like `.profile` or `.bash_profile`. When you are using `zsh`, it is called `.zshrc`.
+Depending on the shell you are using, this file might be called something like `.profile` or `.bash_profile`. When you are using `zsh`, it is called `.zshrc` or `.zprofile`.
 
 ### Autocomplete
 
@@ -149,13 +150,16 @@ You can also write output from a command to a file, using the `>` character:
 - `ls > test.txt` will write the output of the ls command to a file called test.txt.
 - `echo "hello world" > hello.txt` will write the output of the echo command (the text "hello world") to a file called hello.txt.
 
-## Warning
+## Be careful
 
+:::caution
 Do not just copy-paste terminal statements without understanding what they do. If you are not sure, try to grasp them by using a tool like <https://explainshell.com/>
+:::
 
 ## Resources
 
+- [Terminal, npm, git and some little tricks](https://www.joshwcomeau.com/javascript/terminal-for-js-devs/)
+- [CLI for artists and designers](https://github.com/ffd8/cli-for-artists-and-designers)
+- [You don't need GUI](https://github.com/you-dont-need/You-Dont-Need-GUI?tab=readme-ov-file)
 - [Linux command line for you and me!](https://lym.readthedocs.io/en/latest/)
 - [We hope this resource helps designers and non-technical folks appreciate and love the command line like we do!](https://dashdash.io/)
-- [Terminal, npm, git and some little tricks](https://www.joshwcomeau.com/javascript/terminal-for-js-devs/)
-- [You don't need GUI](https://github.com/you-dont-need/You-Dont-Need-GUI?tab=readme-ov-file)
