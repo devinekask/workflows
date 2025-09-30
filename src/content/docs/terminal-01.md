@@ -20,6 +20,8 @@ The following commands should be easy for any developer to use:
 - `cp originalname newname`: copy a file to a new location.
 - `cat filename`: display the contents of a particular file in your terminal window.
 - `echo "hello world"`: display the text between the quotes in the terminal window.
+- `echo hello > newfile.txt`: create a new file called 'newfile.txt' with 'hello' as content.
+- `touch newfile.md`: create a new -empty- file called 'newfile.md'
 
 ### Dollar sign
 
