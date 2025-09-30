@@ -35,7 +35,7 @@ You can find your terminal in your Applications → Utilities folder. It might c
 
 VS Code has a terminal build in. (View → terminal) This is convenient when you have to interact with your project.
 
-You can open VS Code from another therminal instance with the 'code' command. (if you [set it up correctly](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line))
+You can open VS Code from another therminal instance with the 'code' command. (if you [set it up correctly](https://code.visualstudio.com/docs/setup/mac#_launch-vs-code-from-the-command-line))
 
 The following command opens VS Code with the current directory as the active workspace.
 
