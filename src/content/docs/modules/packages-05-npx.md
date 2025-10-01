@@ -54,7 +54,7 @@ cowsay not found
 
 ## npx
 
-With [npx](https://nodejs.dev/en/learn/the-npx-nodejs-package-runner/), you can run commands without installing them. The first time you run it, `npx` will ask to install it, but in fact, it is added to a cache...
+With [npx](https://docs.npmjs.com/cli/v8/commands/npx), you can run commands without installing them. The first time you run it, `npx` will ask to install it, but in fact, it is added to a cache...
 
 ```bash
 $ npx cowsay devine
