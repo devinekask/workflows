@@ -41,17 +41,17 @@ You might have noticed the 'Node' in Node package manager, it won't come as a su
 ### nvm
 
 :::caution
-Be sure to have a `.zshrc` or `.zprofile` file in your home directory. If you don't have one, create it with `touch ~/.zshrc` Otherwise, the installation of nvm will fail.
+Be sure to have a `.zshrc` or `.zprofile` file in your home directory. If you don't have one, create it with `touch ~/.zshrc` or `touch ~/.zprofile` Otherwise, the installation of nvm will fail.
 :::
 
 To handle different Node.js versions easaly, there is a tool called `nvm` (node version manager) Lets start by [installing](https://github.com/nvm-sh/nvm#installing-and-updating) this one first. [^1] See the documentation for the most recent version, the command is something like this (**but change the version number**): `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.XX.X/install.sh | bash`
 
 To doule-check if everything went well, close every terminal instance and open a new window. Type `nvm` and you should get an overview with all the commands nvm has to offer.
 
-Now the Node Version Manager is installed, but we still have to install a Node.js runtime. With the `install` command, we can install specific Node.js versions, but by using the alias `node` we simply install the latest stable version.
+Now the Node Version Manager is installed, but we still have to install a Node.js runtime. With the `install` command, we can install specific Node.js version. By using the '--lts' option, we are installing the latest stable version with **l**ong **t**ime **s**upport.
 
 ```bash
-nvm install node
+nvm install --lts
 ```
 
 Have a look at [the documentation](https://github.com/nvm-sh/nvm#usage) to see which other options are possible.
