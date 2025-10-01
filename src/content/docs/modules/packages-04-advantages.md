@@ -8,27 +8,27 @@ In the previous chapter, we've installed a package to get an idea how npm works.
 
 It will happen sooner or later. You will need some previous version of a package to make it work with another package or a production server that only supports an older Node.js version.
 
-Let us install an older version of `ora`, this is a fancy 'spinner' for the command line, good for now. At the time of writing, the latest version is 6.1.2, we will install version 6.0.0. Let's say we've installed this in the past.
+Let us install an older version of `ora`, this is a fancy 'spinner' for the command line, good for now. At the time of writing, the latest version is 9.0.0, we will install version 8.0.0. Let's say we've installed this in the past.
 
 ```bash
-$ npm install ora@6.0.0
+$ npm install ora@8.0.0
 
-added 31 packages, and audited 33 packages in 2s
+added 18 packages, and audited 19 packages in 832ms
 
-17 packages are looking for funding
+15 packages are looking for funding
   run `npm fund` for details
 
 found 0 vulnerabilities
 ```
 
-If you're wondering why it added 31 packages, keep reading, we will address this in a minute.
+If you're wondering why it added 18 packages, keep reading, we will address this in a minute.
 
 Back to the present, curious to see the state of our packages. Run the following:
 
 ```bash
 $ npm outdated
 Package  Current  Wanted  Latest  Location          Depended by
-ora        6.0.0   6.3.1   8.1.0  node_modules/ora  [projectname]
+ora        8.0.0   8.2.0   9.0.0  node_modules/ora  test
 ```
 
 O-ow, there is a package outdated. Don't worry, we don't have to manually edit files in the node_modules folder, we can simply update this one by running:
@@ -36,9 +36,9 @@ O-ow, there is a package outdated. Don't worry, we don't have to manually edit f
 ```bash
 npm install ora
 
-removed 6 packages, changed 2 packages, and audited 27 packages in 597ms
+added 1 package, removed 1 package, changed 5 packages, and audited 19 packages in 1s
 
-15 packages are looking for funding
+17 packages are looking for funding
   run `npm fund` for details
 
 found 0 vulnerabilities
@@ -95,7 +95,7 @@ Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'nanoid' imported from /Users/
   code: 'ERR_MODULE_NOT_FOUND'
 }
 
-Node.js v18.8.0
+Node.js v22.19.0
 ```
 
 (If you don't get this error and everything works just fine, that probably means you have installed nanoid somewhere else up in the file tree)
