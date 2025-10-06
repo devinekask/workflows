@@ -125,37 +125,34 @@ Once a PR is created, team members can review the code, leave comments, and sugg
 
 **Follow-along:** If working with others, ask them to review your PR. Otherwise, review your own code and merge it.
 
-## Rebasing Latest Changes from Main into Feature Branch
+## Merging Latest Changes from Main into Feature Branch
 
-As development continues on the main branch, your feature branch can become outdated. To incorporate the latest changes from main into your feature branch, you should rebase instead of merging. This keeps the history clean and linear.
+As development continues on the main branch, your feature branch can become outdated. To incorporate the latest changes from main into your feature branch, you can use regular merges. This creates a merge commit but keeps the workflow simple and avoids the complexity of rebasing.
 
-### When to Rebase
+### When to Merge Main into Feature Branch
 
 - When your feature branch is behind main
 - Before creating a PR to ensure your branch is up to date
-- When you want to resolve conflicts locally before pushing
+- When you want to test your feature with the latest changes from main
 
-### How to Rebase
+### How to Merge Main into Feature Branch
 
 ```bash
 # Switch to your feature branch
 git switch feature/add-user-profile
 
-# Fetch latest changes from remote
-git fetch origin
+# Merge the latest main into your feature branch
+git merge main
 
-# Rebase your branch onto the latest main
-git rebase origin/main
-
-# If there are conflicts, resolve them and continue
+# If there are conflicts, resolve them and commit
 # git add <resolved-files>
-# git rebase --continue
+# git commit
 
-# Push the rebased branch (force push since history changed)
-git push origin feature/add-user-profile --force-with-lease
+# Push the merged branch
+git push origin feature/add-user-profile
 ```
 
-### Example: Rebasing with Conflicts
+### Example: Merging with Conflicts
 
 Let's simulate a scenario where main has changes that conflict with our feature branch.
 
@@ -172,8 +169,8 @@ echo "Navigation links here" > footer.md
 git add footer.md
 git commit -m "Add navigation to footer"
 
-# Try to rebase
-git rebase origin/main
+# Try to merge main into feature branch
+git merge main
 
 # Git will show conflict in footer.md
 # Edit footer.md to resolve conflict
@@ -182,22 +179,42 @@ git rebase origin/main
 # Navigation links here
 
 git add footer.md
-git rebase --continue
+git commit -m "Merge main into feature branch and resolve conflicts"
 
-# Push the resolved rebase
-git push origin feature/add-user-profile --force-with-lease
+# Push the merged branch
+git push origin feature/add-user-profile
 ```
 
-### Exercise: Practice Rebasing
+### Using GitHub's Update Branch Button
+
+GitHub provides a convenient "Update branch" button on Pull Request pages that automatically merges the latest changes from main into your feature branch. This is often the easiest method!
+
+**How to use the Update branch button:**
+
+1. Open your Pull Request on GitHub
+2. Look for the "Update branch" button (usually appears when your branch is behind main)
+3. Click "Update branch"
+4. GitHub will create a merge commit automatically
+5. The button will change to show that the branch is up to date
+
+**Benefits of using Update branch:**
+
+- No need to switch branches locally
+- GitHub handles the merge automatically
+- Clear indication in the PR timeline when updates were made
+- Works well with frequent updates
+
+### Exercise: Practice Merging
 
 1. Create a new feature branch `feature/add-about-page`
 2. On main, add a file called `about.md` with some content
 3. On your feature branch, also add `about.md` with different content
-4. Try to rebase your feature branch onto main
+4. Try to merge main into your feature branch
 5. Resolve any conflicts
-6. Push the rebased branch
+6. Push the merged branch
+7. **Alternative:** Create a PR and use GitHub's "Update branch" button
 
-**Follow-along:** Complete the above exercise in your practice repository.
+**Follow-along:** Complete the above exercise in your practice repository. Try both the command-line merge and the GitHub Update branch button.
 
 ## Best Practices for GitHub Flow
 
@@ -206,7 +223,7 @@ git push origin feature/add-user-profile --force-with-lease
 - **Commit often:** Small, focused commits are easier to review
 - **Write good commit messages:** Start with verb, be descriptive
 - **Delete merged branches:** Keep repository clean
-- **Use rebase for feature branches:** Maintain linear history
+- **Use merge to keep feature branches up to date:** Regularly merge main into your feature branches
 - **Test before merging:** Ensure changes don't break existing functionality
 
 ## Common Scenarios
