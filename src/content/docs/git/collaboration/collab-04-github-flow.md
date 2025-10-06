@@ -191,7 +191,7 @@ git rebase --continue
 git push origin feature/add-user-profile --force-with-lease
 ```
 
-### Exercise 2: Practice Rebasing
+### Exercise: Practice Rebasing
 
 1. Create a new feature branch `feature/add-about-page`
 2. On main, add a file called `about.md` with some content
