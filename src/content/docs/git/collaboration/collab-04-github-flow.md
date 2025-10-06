@@ -83,10 +83,7 @@ Push your feature branch to GitHub so others can see your work and collaborate.
 
 ```bash
 # Push the feature branch to GitHub
-git push origin feature/add-user-profile
-
-# If this is the first push of the branch, Git will tell you to set upstream
-git push -u origin feature/add-user-profile
+git push -u origin feature/add-navigation-menu
 ```
 
 **Follow-along:** Push your `feature/add-navigation-menu` branch to GitHub.
