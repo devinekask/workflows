@@ -2,6 +2,15 @@
 title:  Pull
 ---
 
+<details>
+<summary>Looking for the starting files?</summary>
+
+The ideal way to follow this walkthrough is to go over the previous topics first. If you want to skip to this topic, you can [download the starting files here.](https://github.com/devinekask/workflows-git-steps/archive/refs/heads/step/github-push.zip)
+
+Be aware that you will have to initialize a git repository first via `git init` in the unzipped folder.
+
+</details>
+
 ## Pull existing repository
 
 Once a repository has been created, and is on a server like GitHub, you can also download it from other computers/locations. Downloading the repository for the first time is done via the `git clone` command. From then on you can get updates via the `git pull` command. `git pull` is the inverse of `git push`, and you will use it to pull in updates you don't already have locally.
