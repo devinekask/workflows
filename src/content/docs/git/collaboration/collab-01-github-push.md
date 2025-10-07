@@ -100,6 +100,15 @@ Remember to choose the SSH option (instead of the HTTPS option) when cloning a r
 
 ## Create repository & first push
 
+<details>
+<summary>Looking for the starting files?</summary>
+
+The ideal way to follow this walkthrough is to go over the previous topics first. If you want to skip to this topic, you can [download the starting files here.](https://github.com/devinekask/workflows-git-steps/archive/refs/heads/step/branches.zip)
+
+Be aware that you will have to initialize a git repository first via `git init` in the unzipped folder.
+
+</details>
+
 Login to your GitHub account, and click the "New repository" button. Choose a name for your repository and click the "Create Repository" button.
 
 Don't add a `readme.md` or a `.gitignore` file yet. Since we will sync this repo with an existing one (the one we created in a previous chapter) things will get complicated if there are files on both ends. (It is definitely possible to fix this, but we won't go in to that now) If you would start completely from scratch, this wouldn't be an issue.

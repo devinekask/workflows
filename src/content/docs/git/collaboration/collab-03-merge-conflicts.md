@@ -2,6 +2,15 @@
 title: Merge conflicts
 ---
 
+<details>
+<summary>Looking for the starting files?</summary>
+
+The ideal way to follow this walkthrough is to go over the previous topics first. If you want to skip to this topic, you can [download the starting files here.](https://github.com/devinekask/workflows-git-steps/archive/refs/heads/step/pull-rebase.zip)
+
+Be aware that you will have to initialize a git repository first via `git init` in the unzipped folder.
+
+</details>
+
 So far we have only made changes in separate files. However, it can happen that you have made changes to the same file with 2 people, and that a conflict occurs.
 
 In the `project` folder, edit the text in `hello.txt` and push it to the remote repository:

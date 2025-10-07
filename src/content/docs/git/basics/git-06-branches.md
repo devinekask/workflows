@@ -2,6 +2,15 @@
 title:  Branching
 ---
 
+<details>
+<summary>Looking for the starting files?</summary>
+
+The ideal way to follow this walkthrough is to go over the previous topics first. If you want to skip to this topic, you can [download the starting files here.](https://github.com/devinekask/workflows-git-steps/archive/refs/heads/step/ignore.zip)
+
+Be aware that you will have to initialize a git repository first via `git init` in the unzipped folder.
+
+</details>
+
 You can also use branches via Git.
 
 You can use branches to:
