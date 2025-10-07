@@ -127,7 +127,7 @@ We want to go back to the state of our commit "welcome + new world file". Throug
 
 ```bash
 $ git reset --hard 9720
-HEAD is now at 9720321 welcome dev3 + new world file
+HEAD is now at 9720321 welcome + new world file
 ```
 
 Now when you run git log again, you will see that the commits after 9720 are gone:
