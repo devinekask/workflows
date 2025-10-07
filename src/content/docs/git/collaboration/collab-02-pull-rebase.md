@@ -36,7 +36,7 @@ Tip: you can open 2 terminal windows, set them side by side.
 In **folder 1** we create a new file `project.txt`, we add, commit and push to the remote:
 
 ```bash
-project_1 $ echo "created in project" > project.txt
+project_1 $ echo "created in project1" > project.txt
 project_1 $ git add .
 project_1 $ git commit -m "added project.txt file"
 [main 3dc1c52] add project.txt file
