@@ -28,10 +28,10 @@ Get an overview of all the branches
 git branch
 ```
 
-Now that we have created a new `develop` branch, we can switch to it by running `git checkout develop`:
+Now that we have created a new `develop` branch, we can switch to it by running `git switch develop`:
 
 ```bash
-git checkout develop
+git switch develop
 ```
 
 Make some commits on the `develop` branch.
@@ -39,7 +39,7 @@ Make some commits on the `develop` branch.
 We would now like to merge our code from `develop` with our `main` code, so that both branches contain the same code (now `develop` has more commits than `main`, i.e. `develop` stands before `main`). For this we first have to switch back to our `main` branch and merge `develop` into it in a next step:
 
 ```bash
-git checkout main
+git switch main
 ```
 
 The merge of `develop` in `main` is done by the `git merge` command:
@@ -51,7 +51,7 @@ git merge develop main
 Switch back to `develop` immediately, so you don't accidentally develop in the `main` branch (we want our `develop` branch to always have the most recent code):
 
 ```bash
-git checkout develop
+git switch develop
 ```
 
 ## Master/main
