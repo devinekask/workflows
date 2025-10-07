@@ -171,25 +171,13 @@ If you run this, you get something like the following:
 $ npm start
 
 > hellonpm@1.0.0 start
-> node .
+> node index.js
 
-(node:25177) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+Hello Node.js The id is: ROEb6XQbXm73yTL0l3Pht
+(node:66510) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/.../hellonpm/index.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/.../hellonpm/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-/Users/demouser/Documents/hellonpm/index.js:1
-import { nanoid } from "nanoid";
-^^^^^^
-
-SyntaxError: Cannot use import statement outside a module
-    at Object.compileFunction (node:vm:360:18)
-    at wrapSafe (node:internal/modules/cjs/loader:1048:15)
-    at Module._compile (node:internal/modules/cjs/loader:1083:27)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
-    at Module.load (node:internal/modules/cjs/loader:997:32)
-    at Module._load (node:internal/modules/cjs/loader:838:12)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
-    at node:internal/main/run_main_module:18:47
-
-Node.js v18.8.0
 ```
 
 Yeah, we forgot about that one. We have to make clear that we would like to make use of this type of modules. Like they say in the warning, add a `"type": "module",` to the package.json and try again.
