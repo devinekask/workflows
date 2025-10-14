@@ -78,10 +78,9 @@ project_2 $ git push
 To git@github.com:demouser/hellogit
  ! [rejected]        main -> main (fetch first)
 error: failed to push some refs to 'git@github.com:demouser/hellogit'
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., 'git pull ...') before pushing again.
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
@@ -89,22 +88,33 @@ We get an error: there are new commits on the remote that we haven't pulled into
 
 ```bash
 project_2 $ git pull
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
 ```
 
-We are presented with a vim or nano editor to perform a merge. You can enter a custom message here. Enter `:quit` to close the vim editor and continue the merge.
+Git doesn't know how to handle the situation: there are new commits on the remote, and we also have local commits that are not on the remote. We have to tell git how to handle this. We can do this in a couple of ways. The easiest is to do a merge. We can do this by executing the pull command with the `--no-rebase` flag: (we will cover rebase in a moment)
 
 ```bash
-remote: Enumerating objects: 4, done.
-remote: Counting objects: 100% (4/4), done.
-remote: Compressing objects: 100% (1/1), done.
-remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
-Unpacking objects: 100% (3/3), done.
-From git@github.com:demouser/hellogit
-    a8515e0..3dc1c52  main       -> origin/main
-Merge made by the 'recursive' strategy.
-  project.txt | 1 +
-  1 file changed, 1 insertion(+)
-  create mode 100644 project.txt
+project_2 git pull --no-rebase
+```
+
+We are now presented with a vim or nano editor to perform a merge. You can enter a custom message here. Enter `:quit` to close the vim editor (or `CTRL + X` in nano) and continue the merge.
+
+```bash
+Merge made by the 'ort' strategy.
+ project.txt | 1 +
+ 1 file changed, 1 insertion(+)
 ```
 
 When you execute `git status`, you will see that you are 2 commits ahead of the remote: 1 commit is the merge commit, and a second commit is the `project2.txt` commit:
@@ -113,7 +123,9 @@ When you execute `git status`, you will see that you are 2 commits ahead of the 
 project_2 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 2 commits.
-nothing to commit (working directory clean)
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
 ```
 
 Push the commits again to the remote. It succeeds this time.
