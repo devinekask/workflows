@@ -35,6 +35,10 @@ export default defineConfig({
           slug: "vite-01-intro",
         },
         {
+          label: ".env files",
+          slug: "envfiles",
+        },
+        {
           label: "Homebrew",
           slug: "homebrew-01-intro",
         },
