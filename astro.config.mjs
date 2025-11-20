@@ -1,10 +1,14 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import { remarkModifiedTime } from "./src/plugins/remark-modified-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://devinekask.github.io/",
   base: "/workflows",
+  markdown: {
+    remarkPlugins: [remarkModifiedTime],
+  },
   integrations: [
     starlight({
       title: "Workflows",
