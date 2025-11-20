@@ -10,7 +10,8 @@
 	},
 	"dependencies": {
 		"@astrojs/starlight": "^0.36.0",
-		"astro": "^5.13.9"
+		"astro": "^5.13.9",
+		"dayjs": "^1.11.18"
 	},
 	"browserslist": {
 		"production": [

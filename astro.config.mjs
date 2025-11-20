@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://devinekask.github.io/",
@@ -9,6 +10,7 @@ export default defineConfig({
       title: "Workflows",
       favicon: "/favicon.ico",
       customCss: ["./src/styles/custom.css"],
+      lastUpdated: true,
       editLink: {
         baseUrl: "https://github.com/devinekask/workflows/edit/main/",
       },
