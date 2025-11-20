@@ -11,5 +11,5 @@ As developers, we need a lot of tools in our workflow, let us get to know them:
 - [Git collaboration](git/collaboration/collab-01-github-push/)
 - [Modules/npm](modules/packages-01-modules/)
 - [Vite](vite-01-intro)
-- [.env files](envfiles.md)
+- [.env files](envfiles)
 - [Homebrew](homebrew-01-intro)
