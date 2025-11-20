@@ -66,7 +66,7 @@ code config
 
 Now add this to the config file and save it:
 
-```config
+```txt
 Host *
   AddKeysToAgent yes
   IdentityFile ~/.ssh/github
