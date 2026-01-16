@@ -12,9 +12,9 @@ You can request a license through the academic software website so that you can 
 
 Navigate to [Academic Software](https://auth.academicsoftware.be/), enter your Howest e-mail address and click `Login`
 
-Search for the **Combell Webhosting (Linux)**. Check, double check and triple check if you have picked the Linux version!
+Search for the **Combell Webhosting**. 
 
-![Combell](../../../../assets/img/combell/linux.png)
+![Combel](../../../../assets/img/combell/combell.png)
 
 Click on `Request`  to get a license. Write down or store the code that appears on the screen, you will need it in the next step.
 
@@ -28,7 +28,9 @@ YOU CAN ONLY REQUEST THE CODE ONCE!
 
 Navigate to [Combell Business](https://www.combell.com/en/hosting/connect/business).
 
-Choose an url followed by .be - the licence is only valid for .be domains.  The name is without spaces and all characters are in lowercase. **You cannot change this name, so think about the url you pick for yourself.**
+Choose an url followed by .be. 
+
+The licence is valid for .be AND .com domains.  The name is without spaces and all characters are in lowercase. **You cannot change this name, so think about the url you pick for yourself.**
 
 ![Combell Domain](../../../../assets/img/combell/domain.png)
 
