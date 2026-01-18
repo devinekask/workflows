@@ -28,21 +28,25 @@ YOU CAN ONLY REQUEST THE CODE ONCE!
 
 Navigate to [Combell Business](https://www.combell.com/en/hosting/connect/business).
 
-Choose an url followed by .be. 
+Choose an url followed by .be or .com
 
-The licence is valid for .be AND .com domains.  The name is without spaces and all characters are in lowercase. **You cannot change this name, so think about the url you pick for yourself.**
+The licence is valid for .be AND .com domains.  The name is without spaces and all characters are in lowercase.
+
+**You cannot change this name, so think about the url you pick for yourself.**
 
 ![Combell Domain](../../../../assets/img/combell/domain.png)
 
-Add the domain if it's still available. Otherwise, you need to try a different name. You do not need to add other extensions such as .com, .app, ... because you will be charged for most of them.
+Add the domain if it's still available. Otherwise, you need to try a different name. You do not need to add other extensions such as .app, ... because you will be charged for most of them.
 
 ![Combell Domain OK](../../../../assets/img/combell/domainok.png)
 
 Go to cart & complete your order You see an overview of your order. Just click the `Complete your order` button.
 
+Don't worry about the price, you will be able to use your promotional code in the next step.
+
 ![Combell Cart](../../../../assets/img/combell/cart.png)
 
-Enter your contact information. Make sure your e-mail address is your howest e-mail. Go to payment overview
+Enter your contact information. Make sure your e-mail address **is your howest e-mail.** Go to payment overview.
 
 ![Combell Information](../../../../assets/img/combell/information.png)
 
