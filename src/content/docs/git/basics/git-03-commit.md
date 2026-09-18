@@ -142,7 +142,7 @@ $ git add -A   # stages changes in the entire repository
 ```
 
 :::note[A historical note]
-Old tutorials (and some older course material) will tell you that `git add .` does not stage deleted files, and that you need `-A` to stage a deletion. That was true a long time ago, but it changed in Git 2.0  `git add .` stages deletions just fine today. The only real difference left is the one above: which part of the repository the command looks at.
+Old tutorials (and some older course material) will tell you that `git add .` does not stage deleted files, and that you need `-A` to stage a deletion. That was true a long time ago, but it changed in Git 2.0, and `git add .` stages deletions just fine today. The only real difference left is the one above: which part of the repository the command looks at.
 :::
 
 ## GUI
