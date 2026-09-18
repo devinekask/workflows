@@ -51,11 +51,26 @@ We would now like to merge our code from `develop` with our `main` code, so that
 git switch main
 ```
 
-The merge of `develop` in `main` is done by the `git merge` command:
+The merge of `develop` in `main` is done by the `git merge` command. Note that you only name the branch you want to merge *in*. The branch you are standing on is the destination, and you never mention it:
 
 ```bash
-git merge develop main
+git merge develop
 ```
+
+:::caution[Don't pass two branches to `git merge`]
+You will find `git merge develop main` in older course material and in plenty of tutorials. It reads like "merge develop into main", but that is not what Git does with it. `git merge` takes a *list* of branches to pull into the branch you are currently on. Give it two, and you are asking for an octopus merge of both of them into wherever you happen to be standing.
+
+Standing on `main` it looks like it works, but only by accident: Git throws away any listed branch that is already part of your history, so `main` gets dropped and you are left with the normal merge you wanted. Run the exact same command from a third branch while `main` has moved on, and Git takes you at your word:
+
+```
+Merge made by the 'octopus' strategy.
+Merge branches 'develop' and 'main' into feature
+```
+
+That commit now has three parents. And if anything conflicts, the octopus strategy gives up with `fatal: merge program failed` instead of letting you resolve it the usual way.
+
+Switch first, then merge one branch.
+:::
 
 Switch back to `develop` immediately, so you don't accidentally develop in the `main` branch (we want our `develop` branch to always have the most recent code):
 

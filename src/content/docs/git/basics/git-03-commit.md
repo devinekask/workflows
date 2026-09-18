@@ -126,9 +126,24 @@ $ git commit -m "welcome + new world file"
     create mode 100644 world.txt
 ```
 
-### `git add -A .`
+### `git add .` vs `git add -A`
 
-We've seen before that with `git add .` you can stage all changes before commit. Keep in mind that deletes (deleting files) are not staged. To do that, you need to add the -A flag to the command.
+Both stage all your changes, but they differ in *how much* of the repository they look at:
+
+- `git add .` stages everything below the directory you are currently standing in.
+- `git add -A` stages everything in the whole repository, no matter where you stand.
+
+In the root of your project these two do exactly the same thing. The difference only shows up once you are inside a subfolder:
+
+```bash
+$ cd src
+$ git add .    # only stages changes inside src/
+$ git add -A   # stages changes in the entire repository
+```
+
+:::note[A historical note]
+Old tutorials (and some older course material) will tell you that `git add .` does not stage deleted files, and that you need `-A` to stage a deletion. That was true a long time ago, but it changed in Git 2.0, and `git add .` stages deletions just fine today. The only real difference left is the one above: which part of the repository the command looks at.
+:::
 
 ## GUI
 
