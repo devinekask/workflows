@@ -125,7 +125,9 @@ drwx------@   11 demouser  staff    352 Jul 23  2021 Movies
 
 With the `-a` option of `ls` you can see hidden files. There is a reason they are hidden. Don't mess with them unless you know what you are doing.
 
-If you want, you can show those hidden files in your Finder by running the following commands:
+There is a shortcut to toggle the visibility of hidden files in Finder: `cmd + shift + .` (dot)
+
+If you want to show them by default, you can show those hidden files in your Finder by running the following commands:
 
 ```bash
 defaults write com.apple.Finder AppleShowAllFiles true
