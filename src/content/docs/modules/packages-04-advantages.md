@@ -8,27 +8,27 @@ In the previous chapter, we've installed a package to get an idea how npm works.
 
 It will happen sooner or later. You will need some previous version of a package to make it work with another package or a production server that only supports an older Node.js version.
 
-Let us install an older version of `ora`, this is a fancy 'spinner' for the command line, good for now. At the time of writing, the latest version is 9.0.0, we will install version 8.0.0. Let's say we've installed this in the past.
+Let us install an older version of `ora`, this is a fancy 'spinner' for the command line, good for now. At the time of writing, the latest version is 9.4.1, we will install version 9.0.0. Let's say we've installed this in the past.
 
 ```bash
-$ npm install ora@8.0.0
+$ npm install ora@9.0.0
 
-added 18 packages, and audited 19 packages in 832ms
+added 17 packages, and audited 19 packages in 832ms
 
-15 packages are looking for funding
+18 packages are looking for funding
   run `npm fund` for details
 
 found 0 vulnerabilities
 ```
 
-If you're wondering why it added 18 packages, keep reading, we will address this in a minute.
+If you're wondering why it added 17 packages, keep reading, we will address this in a minute.
 
 Back to the present, curious to see the state of our packages. Run the following:
 
 ```bash
 $ npm outdated
 Package  Current  Wanted  Latest  Location          Depended by
-ora        8.0.0   8.2.0   9.0.0  node_modules/ora  test
+ora        9.0.0   9.4.1   9.4.1  node_modules/ora  test
 ```
 
 O-ow, there is a package outdated. Don't worry, we don't have to manually edit files in the node_modules folder, we can simply update this one by running:
@@ -36,15 +36,15 @@ O-ow, there is a package outdated. Don't worry, we don't have to manually edit f
 ```bash
 npm install ora
 
-added 1 package, removed 1 package, changed 5 packages, and audited 19 packages in 1s
+changed 2 packages, and audited 19 packages in 575ms
 
-17 packages are looking for funding
+18 packages are looking for funding
   run `npm fund` for details
 
 found 0 vulnerabilities
 ```
 
-Seems like some packages were removed and some changed. But, most important for now, let us check if we still have outdated packages:
+Let us check if we still have outdated packages:
 
 ```bash
 npm outdated
