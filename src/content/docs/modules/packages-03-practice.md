@@ -36,6 +36,7 @@ git repository:
 keywords:
 author:
 license: (ISC)
+type: (commonjs)
 About to write to /Users/demouser/Documents/hellonpm/package.json:
 
 {
@@ -47,7 +48,8 @@ About to write to /Users/demouser/Documents/hellonpm/package.json:
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "commonjs"
 }
 
 
@@ -173,14 +175,17 @@ $ npm start
 > hellonpm@1.0.0 start
 > node index.js
 
-Hello Node.js The id is: ROEb6XQbXm73yTL0l3Pht
-(node:66510) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/.../hellonpm/index.js is not specified and it doesn't parse as CommonJS.
-Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
-To eliminate this warning, add "type": "module" to /Users/.../hellonpm/package.json.
+(node:11178) Warning: Failed to load the ES module: /Users/demouser/Documents/hellonpm/index.js. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
 (Use `node --trace-warnings ...` to show where the warning was created)
+/Users/demouser/Documents/hellonpm/index.js:1
+import { nanoid } from "nanoid";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+...
 ```
 
-Yeah, we forgot about that one. We have to make clear that we would like to make use of this type of modules. Like they say in the warning, add a `"type": "module",` to the package.json and try again.
+Yeah, we forgot about that one. We have to make clear that we would like to make use of this type of modules. Like they say in the warning, set  `"type": "module",` to the package.json and try again. (note that we also could have set this in the init wizard)
 
 ```bash
 npm start
