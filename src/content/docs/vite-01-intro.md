@@ -2,7 +2,7 @@
 title: Vite
 ---
 
-Up until now, we were doing fine with the VS Code Live Server. But since our applications will become more and more complex (depending on npm packages to give an example), we need a more advanced development server. This is where [Vite](https://vitejs.dev/) comes in. There are [a lot of advantages](https://vitejs.dev/guide/why.html), the following is just a summary:
+Up until now, we were doing fine with the VS Code Live Server. But since our applications will become more and more complex (depending on npm packages to give an example), we need a more advanced development server. This is where [Vite](https://vite.dev/) comes in. There are [a lot of advantages](https://vite.dev/guide/why.html), the following is just a summary:
 
 ## Features
 
@@ -32,7 +32,51 @@ To create a new vite-project, you can run the following command:
 npm create vite@latest
 ```
 
-This is an alias for `npm init vite@latest` and will create a new project configured with Vite. A folder will be created with the name of the project. When asked, you can choose for a basic 'Vanilla' project.
+This is an alias for `npm init vite@latest` and will start a command line wizard to create a new project. You will be asked for the name of the project and the framework you want to use. For now, we will choose `vanilla` (plain JavaScript) and `JavaScript` (not TypeScript).
+
+```bash
+npm create vite@latest
+
+> npx
+> "create-vite"
+
+│
+◇  Project name:
+│  vite-project
+│
+◇  Select a framework:
+│  Vanilla
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Install with npm and start now?
+│  Yes
+│
+◇  Scaffolding project in /Users/demouser/vite-project...
+│
+◇  Installing dependencies with npm...
+
+added 15 packages, and audited 16 packages in 5s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+│
+◇  Starting dev server...
+
+> vite-project@0.0.0 dev
+> vite
+
+
+  VITE v8.3.0  ready in 248 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+```
+
 
 You _can_ write this in one line to skip the steps as follows:
 
@@ -60,12 +104,14 @@ npm install
 Have a look at the newly created project, there is a lot!
 
 - `node_modules` - this is where all the dependencies are stored, dependencies needed by Vite
-- `public` - A directory containing an SVG file. Files in this directory aren't parsed by Vite, this has certain [consequences](https://vitejs.dev/guide/assets.html#the-public-directory)
+- `public` - A directory containing two SVG files: the `favicon.svg` and an `icons.svg` sprite. Files in this directory aren't parsed by Vite, they are copied as-is. This has certain [consequences](https://vite.dev/guide/assets.html#the-public-directory)
+- `src` - The directory that contains all the source code of your project, everything in here will be processed by Vite
+  - `assets` - A directory containing an image (`hero.png`) and two SVG files (`javascript.svg` and `vite.svg`), these will be parsed by Vite
+  - `counter.js` - An example file that contains a JavaScript function to increase a counter
+  - `main.js` - The main JavaScript file, it imports the `counter.js` file, the images from the `assets` folder and the `style.css` (!) file
+  - `style.css` - The main CSS file.
 - `.gitignore` - A file that tells git which files to ignore, notice that the project itself isn't a repository yet.
-- `counter.js` - An example file that contains a JavaScript function to increase a counter
-- `index.html` - The main HTML file, notice that it has a script tag that loads a `/main.js` file
-- `javascript.svg` - An other SVG file, this one will be parsed by Vite
-- `main.js` - The main JavaScript file, it imports the `counter.js` file, the `javascript.svg` file and the `style.css` (!) file
+- `index.html` - The main HTML file, notice that it lives in the root of the project (not in `src` or `public`) and that it has a script tag that loads the `/src/main.js` file
 - `package-lock.json` - obviously
 - `package.json` - Notice that Vite is a **dev**Dependency and there are 3 scripts available
 - `style.css` - The main CSS file.
@@ -79,10 +125,11 @@ $ npm run dev
 > vite
 
 
-VITE v3.1.8  ready in 218 ms
+  VITE v8.3.0  ready in 228 ms
 
-➜  Local:   http://127.0.0.1:5173/
-➜  Network: use --host to expose
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
 ```
 
 When you open the URL in your browser, you will see a basic demo page.
@@ -108,12 +155,18 @@ $ npm run build
 > myproject@0.0.0 build
 > vite build
 
-vite v3.1.8 building for production...
-✓ 6 modules transformed.
-dist/assets/javascript.8dac5379.svg   0.97 KiB
-dist/index.html                       0.42 KiB
-dist/assets/index.2eccdaac.js         1.40 KiB / gzip: 0.73 KiB
-dist/assets/index.d0964974.css        1.19 KiB / gzip: 0.62 KiB
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 9 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  0.45 kB │ gzip: 0.29 kB
+dist/assets/vite-BF8QNONU.svg    8.70 kB │ gzip: 1.60 kB
+dist/assets/hero-CLDdwZDr.png   13.05 kB
+dist/assets/index-CsUDhMuy.css   4.10 kB │ gzip: 1.46 kB
+dist/assets/index-CAoPt-vL.js    4.05 kB │ gzip: 1.77 kB
+
+✓ built in 216ms
 ```
 
 The build process is done, and you can find the files in the `dist` folder.
@@ -144,7 +197,7 @@ This opens up a new browser window with the production build. Instead of the inl
 
 It is quite common for us to deploy something on a "nested public path" (aka subdirectory). By default, Vite assumes we are deploying on the root of a domain, so we can run into some issues when requiring assets.
 
-To let Vite know the name of te subdirectory (structure), we can add a `base` property to the build argument in our package.json. See the [documentation](https://vitejs.dev/guide/build.html#public-base-path) for more details.
+To let Vite know the name of the subdirectory (structure), we can add a `base` property to the build argument in our package.json. See the [documentation](https://vite.dev/guide/build.html#public-base-path) for more details.
 
 ```json
 {
