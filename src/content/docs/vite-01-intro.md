@@ -12,7 +12,7 @@ Vite is a development server that has some special tricks up its sleeve to start
 
 ### HMR
 
-Vite has Hot Module Replacement (HMR) built in. This means that when you change a file, the browser will automatically reload the page. And again... does this fast.
+Vite has Hot Module Replacement (HMR) built in. When you change a file, Vite doesn't reload the whole page (like Live Server does), but swaps only the changed module in the running page. So the page keeps its state: a filled-in form, an opened menu, a counter value... And again... it does this fast.
 
 ### Production build
 
@@ -154,7 +154,17 @@ If you want to stop the dev server, you can enter `Ctrl + C` in the terminal.
 
 ### HMR in action
 
-Organize your desktop so that a browser and VS Code are side by side. Make sure that the Vite dev server is running. Now edit the style.css to give the page a red background. You will see that the background of the page turns red immediately --without doing a full page refresh.- When you open up your Developer Tools and inspect the head element, you will experience that only the style tag changes when you change the background color.
+Organize your desktop so that a browser and VS Code are side by side. Make sure that the Vite dev server is running.
+
+1. Click the counter button a few times, until it says `Count is 5`.
+2. Open `src/style.css` and give the page a red background by adding `background: red;` to the `body` rule. The background turns red immediately, and the counter **still says 5**. The CSS was swapped without a full page refresh.
+3. Now open `src/main.js` and change the text `Get started` into something else. This time, the page does a full reload: your new text is there, but the counter is **back at 0**.
+
+Why the difference? Vite knows how to hot swap a CSS file on its own. For a JavaScript file, the code itself has to tell Vite how to replace it, and our plain `main.js` doesn't do that. So Vite falls back to a full page reload. Frameworks like React or Vue do this for you, via their Vite plugins, so in those projects your JavaScript changes are hot swapped as well.
+
+:::tip
+Open your Developer Tools and inspect the `head` element while you change the background color. Vite injected the CSS as a `style` tag, and only the content of that tag changes.
+:::
 
 ### Build it
 
