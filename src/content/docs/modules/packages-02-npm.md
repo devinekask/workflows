@@ -56,7 +56,7 @@ nvm install --lts
 
 Have a look at [the documentation](https://github.com/nvm-sh/nvm#usage) to see which other options are possible.
 
-[^1] Assuming that the xcode command line tools are installed (run `xcode-select –install` otherwise)
+[^1] Assuming that the xcode command line tools are installed (run `xcode-select –-install` otherwise)
 
 ### npm
 
