@@ -60,7 +60,7 @@ If you don't like these types of interrogation (and you find yourself pressing e
 
 ## package.json
 
-After you ran the previous command, a `package.json` file was created. Although we have no intention of publishing this project as a new package, this project is simply considered as a "package" for npm. This file keeps track of all the packages we will use, scripts we would like to run, version, name, etc. You can [take a look at the docs](https://docs.npmjs.com/cli/v8/configuring-npm/package-json) if you want to look up a specific property.
+After you ran the previous command, a `package.json` file was created. Although we have no intention of publishing this project as a new package, this project is simply considered as a "package" for npm. This file keeps track of all the packages we will use, scripts we would like to run, version, name, etc. You can [take a look at the docs](https://docs.npmjs.com/cli/v12/configuring-npm/package-json) if you want to look up a specific property.
 
 ### main
 
