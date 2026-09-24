@@ -160,3 +160,9 @@ DATABASE_URL=postgresql://...  # Not exposed to client
 // In your Vite app
 const apiUrl = import.meta.env.VITE_API_URL;
 ```
+
+:::caution[`VITE_` values are public]
+Vite replaces every `import.meta.env.VITE_*` reference with its literal value at build time. Those values end up in the JavaScript bundle that is sent to the browser, so anyone can read them via DevTools or by opening the built files in `dist/`.
+
+Never put secrets (API keys with write access, database passwords, private tokens) in a `VITE_` variable. Keeping them in `.env` and out of Git does **not** make them private once they're in the bundle. Secrets belong on a server (e.g. a backend or serverless function) that the client calls.
+:::
