@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import { unified } from "@astrojs/markdown-remark";
 import { remarkModifiedTime } from "./src/plugins/remark-modified-time.mjs";
 
 // https://astro.build/config
@@ -7,7 +8,7 @@ export default defineConfig({
   site: "https://devinekask.github.io/",
   base: "/workflows",
   markdown: {
-    remarkPlugins: [remarkModifiedTime],
+    processor: unified({ remarkPlugins: [remarkModifiedTime] }),
   },
   integrations: [
     starlight({
@@ -28,11 +29,11 @@ export default defineConfig({
         },
         {
           label: "Git",
-          autogenerate: { directory: "git" },
+          items: [{ autogenerate: { directory: "git" } }],
         },
         {
           label: "Modules",
-          autogenerate: { directory: "modules" },
+          items: [{ autogenerate: { directory: "modules" } }],
         },
         {
           label: "Vite",
@@ -48,11 +49,11 @@ export default defineConfig({
         },
         {
           label: "Code quality",
-          autogenerate: { directory: "code quality" },
+          items: [{ autogenerate: { directory: "code quality" } }],
         },
         {
           label: "Deployment",
-          autogenerate: { directory: "deployment" },
+          items: [{ autogenerate: { directory: "deployment" } }],
         },
       ],
     }),
