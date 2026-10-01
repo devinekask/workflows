@@ -9,10 +9,19 @@ In the same way you can lint your JavaScript files with ESLint, it is possible t
 To get up and running, you need to install stylelint itself and a configuration. According to the [stylelint docs](https://stylelint.io/user-guide/get-started), you can do this by running the following command:
 
 ```bash
-npm install --save-dev stylelint stylelint-config-standard
+npm create stylelint@latest
 ```
 
-There is no setup wizard like ESLint has, so you need to create a `.stylelintrc.json` file in the root of your project yourself. There, you simply reference the standard ruleset (see the docs)
+Just like the ESLint wizard, it first shows you what it is going to do and asks you to continue. It then creates a `stylelint.config.mjs` file in the root of your project and installs Stylelint together with the standard ruleset (`npm add -D stylelint stylelint-config-standard`). The config file simply references that standard ruleset:
+
+```js
+/** @type {import("stylelint").Config} */
+export default {
+  extends: ["stylelint-config-standard"]
+};
+```
+
+You might come across a `.stylelintrc.json` file in older projects or tutorials. That still works: it is just another name Stylelint looks for, containing the same settings in JSON.
 
 ## Run stylelint
 
@@ -24,4 +33,4 @@ npx stylelint "**/*.css"
 
 ## VS Code plugin
 
-By using the [VS Code Stylelint plugin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint), you can see the errors and warnings directly in your editor. See the documentation how to configure this in a way it doesn't collide with the build in VS Code CSS linting.
+By using the [VS Code Stylelint plugin](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint), you can see the errors and warnings directly in your editor. See the documentation how to configure this in a way it doesn't collide with the built-in VS Code CSS linting.
