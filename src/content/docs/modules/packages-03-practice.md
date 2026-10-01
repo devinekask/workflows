@@ -191,7 +191,7 @@ Yeah, we forgot about that one. We have to make clear that we would like to make
 npm start
 
 > hellonpm@1.0.0 start
-> node .
+> node index.js
 
 Hello Node.js The id is: 7paYoH6CZva14wUhX9mgf
 ```
