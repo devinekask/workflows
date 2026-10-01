@@ -76,7 +76,7 @@ Now try to run start again:
 $ npm start
 
 > hellonpm@1.0.0 start
-> node .
+> node index.js
 
 node:internal/errors:484
     ErrorCaptureStackTrace(err);
@@ -116,7 +116,7 @@ found 0 vulnerabilities
 $ npm start
 
 > hellonpm@1.0.0 start
-> node .
+> node index.js
 
 Hello Node.js The id is: eAKBUmelPv5LDTyOuJdP3
 ```

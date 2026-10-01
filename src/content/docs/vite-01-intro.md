@@ -219,7 +219,7 @@ $ npm run preview
 > myproject@0.0.0 preview
 > vite preview
 
-  ➜  Local:   http://127.0.0.1:4173/
+  ➜  Local:   http://localhost:4173/
   ➜  Network: use --host to expose
 ```
 
@@ -229,7 +229,7 @@ This opens up a new browser window with the production build. Instead of the inl
 
 It is quite common for us to deploy something on a "nested public path" (aka subdirectory). By default, Vite assumes we are deploying on the root of a domain, so we can run into some issues when requiring assets.
 
-To let Vite know the name of the subdirectory (structure), we can add a `base` property to the build argument in our package.json. See the [documentation](https://vite.dev/guide/build.html#public-base-path) for more details.
+To let Vite know the name of the subdirectory (structure), we can pass the `--base` option to `vite build`, for example in the build script of our package.json. See the [documentation](https://vite.dev/guide/build.html#public-base-path) for more details.
 
 ```json
 {
